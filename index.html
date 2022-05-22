@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fictional Books</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>I Love Books!</h1>
+      <h2>Especially Fictional Books</h2>
+      <hr />
+      <img
+        src="
+          https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/911/original/books.jpg?1648036945"
+        alt="Books"
+        width="400"
+      />
+      <hr />
+      <p>
+        A <strong> fictional book </strong> is a text created specifically for a
+        work in an imaginary narrative that is referred to, depicted, or
+        excerpted in a story, book, film, or other fictional work, and which
+        exists only in one or more fictional works. A fictional book may be
+        created to add realism or depth to a larger fictional work.
+      </p>
+
+      <a href="https://en.wikipedia.org/wiki/Fictional_book" target="_blank">
+        Read on Wikipedia
+      </a>
+      <br />
+      <button>📚 Try Fictional Books 📚</button>
+      <p>
+        <span class="me">
+          <em> This page was built by Somaya Albadawi </em>
+        </span>
+      </p>
+    </div>
+
+    <script>
+      function buyBooks() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+
+        if (age < 18) {
+          alert(
+            "Hi " +
+              name +
+              "! Here are young adult fiction book recommendations. 📚"
+          );
+        } else {
+          alert(
+            "Hi " + name + "! Here are adult fiction book recommendations. 📖"
+          );
+        }
+      }
+
+      let buyingButton = document.querySelector("button");
+      buyingButton.addEventListener("click", buyBooks);
+    </script>
+  </body>
+</html>
